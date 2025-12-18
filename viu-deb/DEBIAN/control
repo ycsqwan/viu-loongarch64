@@ -1,0 +1,18 @@
+Package: viu
+Version: 1.6.1
+Section: utils
+Priority: optional
+Architecture: loongarch64
+Depends: libc6 (>= 2.28)
+Maintainer: Atanas Yankov <atanas.yankov98@gmail.com>
+Description: View images right from the terminal
+ viu is a terminal-based image viewer that allows you to view images
+ directly from the command line. It supports various image formats
+ including PNG, JPEG, GIF, and more.
+ .
+ Features:
+  - Display images in the terminal
+  - Support for animated GIFs
+  - Resize images on the fly
+  - Display image names
+  - Support for various output modes (blocks, sixel)
