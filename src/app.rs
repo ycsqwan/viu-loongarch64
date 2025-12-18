@@ -117,7 +117,7 @@ fn view_directory(conf: &Config, dirname: &str, (tx, rx): TxRx) -> ViuResult {
 
 fn view_file(conf: &Config, filename: &str, (tx, rx): TxRx) -> ViuResult {
     if conf.name {
-        println!("{}:", filename);
+        println!("{filename}:");
     }
     let mut file_in = fs::File::open(filename)?;
 
@@ -141,7 +141,7 @@ fn view_file(conf: &Config, filename: &str, (tx, rx): TxRx) -> ViuResult {
         }
     }
     if conf.caption {
-        println!("{}", filename);
+        println!("{filename}");
     }
 
     Ok(())

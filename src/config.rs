@@ -46,7 +46,7 @@ impl<'a> Config<'a> {
             absolute_offset,
             use_kitty: !use_blocks,
             use_iterm: !use_blocks,
-            #[cfg(any(feature = "sixel", feature = "icy_sixel"))]
+            #[cfg(feature = "sixel")]
             use_sixel: !use_blocks,
             ..Default::default()
         };

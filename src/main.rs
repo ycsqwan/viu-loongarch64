@@ -123,7 +123,7 @@ fn main() {
     let conf = Config::new(&matches);
 
     if let Err(e) = app::run(conf) {
-        eprintln!("{:?}", e);
+        eprintln!("{e:?}");
         std::process::exit(1);
     }
 }
